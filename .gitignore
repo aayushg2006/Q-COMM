@@ -1,0 +1,70 @@
+# ------------------------------
+# Q-Comm Backbone (Monorepo) Ignore Rules
+# ------------------------------
+
+# OS / system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / editors
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Secrets / env files
+**/.env
+**/.env.*
+!**/.env.example
+
+# ------------------------------
+# Backend (Spring Boot / Maven)
+# ------------------------------
+backend-springboot/target/
+backend-springboot/.mvn/timing.properties
+backend-springboot/.classpath
+backend-springboot/.project
+backend-springboot/.settings/
+backend-springboot/.factorypath
+backend-springboot/.apt_generated/
+backend-springboot/.springBeans
+backend-springboot/.sts4-cache/
+backend-springboot/build/
+
+# ------------------------------
+# Frontend (Next.js / Node)
+# ------------------------------
+frontend-nextjs/node_modules/
+frontend-nextjs/.next/
+frontend-nextjs/out/
+frontend-nextjs/build/
+frontend-nextjs/coverage/
+frontend-nextjs/.vercel/
+frontend-nextjs/.turbo/
+frontend-nextjs/*.tsbuildinfo
+frontend-nextjs/next-env.d.ts
+
+# Yarn Plug'n'Play
+frontend-nextjs/.pnp
+frontend-nextjs/.pnp.*
+frontend-nextjs/.yarn/*
+!frontend-nextjs/.yarn/patches
+!frontend-nextjs/.yarn/plugins
+!frontend-nextjs/.yarn/releases
+!frontend-nextjs/.yarn/versions
+
+# Temporary / swap files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
